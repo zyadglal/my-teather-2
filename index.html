@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/my teacher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./a1a_files/all.css" rel="stylesheet">
+    <link href="./a1a_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>My Teacher</title>
+</head>
+
+<body id="body">
+
+
+
+    <div class="dashboard"><span><i class="fa-solid fa-bars"></i></span>Education Dashboard</div>
+
+    <!-- <i class="fa-solid fa-bars"></i> -->
+    <!--side bar -->
+    <div class="sidebar hide" id="sidebar">
+        <div class="sidebar-header">
+            <h2>My Teacher</h2>
+            <ul>
+                <h6>Menu</h6>
+                <li id="h2ome"><i class="fa-solid fa-house"></i>Home</li>
+                <li id="t2imetable"><i class="fa-solid fa-calendar"></i>Timetable</li>
+                <li id="c2hannels"><i class="fa-solid fa-message"></i>Teacher Channels</li>
+                <li id="t2asks"><i class="fa-solid fa-list-check"></i>To-Do List</li>
+            </ul>
+            <ul>
+                <h6>Teachers</h6>
+                <li><i class="fa-solid fa-book-open"></i>Arabic Teacher</li>
+                <li><i class="fa-solid fa-globe"></i>English Teacher</li>
+                <li><i class="fa-solid fa-calculator"></i>Math Teacher</li>
+                <li><i class="fa-solid fa-flask-vial"></i>Chemistry Teacher</li>
+                <li><i class="fa-solid fa-brain"></i>Physics Teacher</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--Home page-->
+
+    <div class="home slide-in-cente2r" id="element20">
+        <h1>EduConnect Dashboard</h1>
+        <p>Your all-in-one platform to organize study schedules, connect with teachers, and manage<br>your educational
+            journey across
+            Arabic, English, Math, Chemistry, and Physics.
+        </p>
+        <div class="buttons">
+            <button class="button" id="view">View Timetable</button>
+            <button class="button" id="contacts">Connect with Teachers</button>
+        </div>
+    </div>
+
+    <div class="icons slide-in-cente2r" id="element21">
+        <div><i class="fa-solid fa-book-open"></i>5<br>Subjects</div>
+        <div><i class="fa-solid fa-person-chalkboard"></i>5<br>Teachers</div>
+        <div id="total2"><i class="fa-solid fa-list-check"></i>0<br>Tasks</div>
+    </div>
+
+    <div class="object">
+        <div id="smart_time" class="slide-in">
+            <h2><i class="fa-solid fa-calendar"></i>Smart Timtable</h2>
+            <p>
+                Organize your weekly schedule with all 5 subjects, track homework deadlines, and mark completed
+                tasks.
+            </p>
+            <button class="explore" id="time_table">Explore</button>
+        </div>
+        <div class="slide-in-right" id="element3">
+            <h2><i class="fa-solid fa-user-group"></i>Teacher Profiles</h2>
+            <p>
+                Access detailed profiles of your Arabic, English, Math, Chemistry, and Physics teachers with quick
+                platform links.
+            </p>
+            <button class="explore" id="links">Explore</button>
+        </div>
+        <div id="T-channels" class="slide-in">
+            <h2><i class="fa-solid fa-message" ></i>Teacher Channels</h2>
+            <p>
+                Connect with your teachers through multiple platforms - YouTube, Telegram, Facebook, WhatsApp, and
+                lesson platforms.
+            </p>
+            <button class="explore" id="channels">Explore</button>
+        </div>
+        <div class="slide-in-right" id="element4">
+            <h2><i class="fa-solid fa-square-check"></i>Smart To-Do Lists</h2>
+            <p>
+                Create, manage, and track your study tasks. Never miss an assignment or revision session again.
+            </p>
+            <button class="explore" id="tasks">Explore</button>
+        </div>
+    </div>
+
+    <div class="get slide-in-down" id="element5">
+        <h2>Ready to Transform Your Learning?</h2>
+        <p>Start organizing your educational journey today. Create schedules, connect with teachers, and track your
+            progress.
+        </p>
+        <button class="explore" id="timetable">Get Started Now</button>
+    </div>
+    <!--timetable-->
+    <div class="timetable">
+        <div id="weekly-t">
+            <h2>Weekly Timetable</h2>
+            <p>Track your lessons and homework across all subjects</p>
+        </div>
+        <div class="timetable-grid">
+            <div id="element8" class="slide-in">
+                <i class="fa-solid fa-calendar"></i>5<br> Total Subjects
+            </div>
+            <div id="num" class="slide-in-center">
+                <i class="fa-solid fa-clock"></i>0<br>Lessons Done
+            </div>
+            <div id="homework-input" class="slide-in-center">
+                <i class="fa-solid fa-book"></i>0<br> Homework Done
+            </div>
+            <div id="progress" class="slide-in-right">
+                <i class="fa-solid fa-bars-progress"></i>0%<br> progress
+            </div>
+        </div>
+        <div class="schedule">
+            <h2><i class="fa-solid fa-calendar"></i>Subject Schedule</h2>
+            <p>Click the checkboxes to mark<br>lessons and homework as completed</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="timetable-table">
+            <tr>
+                <th>Subject</th>
+                <th>Teacher</th>
+                <th>Lesson Day</th>
+                <th>Homework Day</th>
+                <th>Link</th>
+                <th>Lesson</th>
+                <th>Homework</th>
+            </tr>
+            <tr>
+                <td>
+                    <h5>Arabic</h5>
+                </td>
+                <td>Mohamed Salah</td>
+                <td>---</td>
+                <td>---</td>
+                <td><a href="https://bassthalk.com/home" class="join" target=" _blank"><i
+                            class="fa-solid fa-up-right-from-square"></i> Join</a></td>
+                <td><input type="checkbox" id="lessons" onclick="plus() , updateProgress()"></td>
+                <td><input type="checkbox" id="homework" onclick="homeworkFunc() , updateProgress()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>English</h5>
+                </td>
+                <td>Ayman Fayez</td>
+                <td>Sunday<br>4:30pm</td>
+                <td>---</td>
+                <td>---</td>
+                <td><input type="checkbox" id="lessons" onclick="plus() , updateProgress()"></td>
+                <td><input type="checkbox" id="homework" onclick="homeworkFunc() , updateProgress()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>Math</h5>
+                </td>
+                <td>eng.Ahmed Esam</td>
+                <td>Tuesday<br>---</td>
+                <td>Saturday</td>
+                <td><a href="https://www.jawacademy.net/teacher-profile/5" target="_blank"><i
+                            class="fa-solid fa-up-right-from-square"></i> Join</a></td>
+                <td><input type="checkbox" id="lessons" onclick="plus() , updateProgress()"></td>
+                <td><input type="checkbox" id="homework" onclick="homeworkFunc() , updateProgress()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>Chemistry</h5>
+                </td>
+                <td>Khaled Saqr</td>
+                <td>Saturday<br>6:00pm</td>
+                <td>Tuesday</td>
+                <td><a href="https://www.khaled-sakr.com/user-profile/my-courses" target="_blank"><i
+                            class="fa-solid fa-up-right-from-square"></i> Join</a></td>
+                <td><input type="checkbox" id="lessons" onclick="plus() , updateProgress()"></td>
+                <td><input type="checkbox" id="homework" onclick="homeworkFunc() , updateProgress()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>Physics</h5>
+                </td>
+                <td>M. Abd Elma3bood</td>
+                <td>---</td>
+                <td>---</td>
+                <td><a href="https://abdelmaaboud.com/login" target="_blank"><i
+                            class="fa-solid fa-up-right-from-square"></i> Join</a></td>
+                <td><input type="checkbox" id="lessons" onclick="plus() , updateProgress()"></td>
+                <td><input type="checkbox" id="homework" onclick="homeworkFunc() , updateProgress()"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--contact-->
+    <div class="contact">
+        <h1>Teacher Channels</h1>
+        <p>Connect with your teachers across multiple platforms and channels</p>
+        <div class="socials">
+            <div class="slide-in" id="element10"><i class="fa-brands fa-whatsapp"></i> WhatsApp<p>2 Teachers</p>
+            </div>
+            <div class="slide-in" id="element14"><i class="fa-brands fa-instagram"></i> Instagram<p>3 Teachers</p>
+            </div>
+            <div class="slide-in-center" id="element11"><i class="fa-brands fa-facebook"></i> Facebook<p>4 Teachers</p>
+            </div>
+            <div class="slide-in-right" id="element12"><i class="fa-brands fa-telegram"></i> Telegram<p>2 Teachers</p>
+            </div>
+            <div class="slide-in-right" id="element13"><i class="fa-brands fa-youtube"></i> YouTube<p>4 Teachers</p>
+            </div>
+        </div>
+        <div class="teachers-platforms slide-in-center" id="element15">
+            <div class="teacher">
+                <div class="info socend">
+                    <div>
+                        <h2>Mr.Ayman Fayez</h2>
+                        <p>English Teacher</p>
+                    </div>
+                    <div>
+                        <h5>English</h5>
+                    </div>
+                </div>
+                <div class="platforms">
+                    <div class="whatsapp W-ayman"><i class="fa-brands fa-whatsapp"></i> WhatsApp</div>
+                    <div class="telegram T-ayman"><i class="fa-brands fa-telegram"></i> Telegram</div>
+                </div>
+            </div>
+            <div class="teacher">
+                <div class="info third">
+                    <div>
+                        <h2>eng.Ahmed Esam</h2>
+                        <p>Math Teacher</p>
+                    </div>
+                    <div>
+                        <h5>Math</h5>
+                    </div>
+                </div>
+                <div class="platforms">
+                    <div class="faceb F-ahmed"><i class="fa-brands fa-facebook"></i> Facebook</div>
+                    <div class="telegram T-ahmed"><i class="fa-brands fa-telegram"></i> Telegram</div>
+                    <div class="youtube Y-ahmed"><i class="fa-brands fa-youtube"></i> YouTube</div>
+                </div>
+            </div>
+            <div class="teacher">
+                <div class="info fourth">
+                    <div>
+                        <h2>Mr.Khaled Saqr</h2>
+                        <p>Chemistry Teacher</p>
+                    </div>
+                    <div>
+                        <h5>Chemistry</h5>
+                    </div>
+                </div>
+                <div class="platforms">
+                    <div class="insta I-khaled"><i class="fa-brands fa-instagram"></i> Instagram</div>
+                    <div class="faceb F-khaled"><i class="fa-brands fa-facebook"></i> Facebook</div>
+                    <div class="youtube Y-khaled"><i class="fa-brands fa-youtube"></i> YouTube</div>
+                </div>
+            </div>
+            <div class="teacher">
+                <div class="info fifth">
+                    <div>
+                        <h2>M. Abd Elma3bood</h2>
+                        <p>Physics Teacher</p>
+                    </div>
+                    <div>
+                        <h5>Physics</h5>
+                    </div>
+                </div>
+                <div class="platforms">
+                    <div class="insta I-mohamed"><i class="fa-brands fa-instagram"></i> Instagram</div>
+                    <div class="faceb F-mohamed"><i class="fa-brands fa-facebook"></i> Facebook</div>
+                    <div class="youtube Y-mohamed"><i class="fa-brands fa-youtube"></i> YouTube</div>
+                </div>
+            </div>
+            <div class="teacher extra">
+                <div class="info first">
+                    <div>
+                        <h2>Mr.Mohamed Salah</h2>
+                        <p>Arabic Teacher</p>
+                    </div>
+                    <div>
+                        <h5>Arabic</h5>
+                    </div>
+                </div>
+                <div class="platforms">
+                    <div class="whatsapp W-salah"><i class="fa-brands fa-whatsapp"></i> WhatsApp</div>
+                    <div class="insta I-salah"><i class="fa-brands fa-instagram"></i> Instagram</div>
+                    <div class="faceb F-salah"><i class="fa-brands fa-facebook"></i> Facebook</div>
+                    <div class="youtube Y-salah"><i class="fa-brands fa-youtube"></i> YouTube</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- To-Do-list -->
+    <div class="to-do">
+        <div class="weekly-t">
+            <h2>To-Do List</h2>
+            <p>Organize your study tasks and track your progress</p>
+        </div class="timetable">
+        <div class="timetable-grid">
+            <div id="total" class="slide-in">
+                <i class="fa-solid fa-bars-progress"></i>5<br>Total Tasks
+            </div>
+            <div id="comp" class="slide-in-center">
+                <i class="fa-regular fa-square-check"></i>0<br>Completed
+            </div>
+            <div id="rem" class="slide-in-center">
+                <i class="fa-regular fa-square"></i>0<br>Remaining
+            </div>
+            <div id="progres2s" class="slide-in-right">
+                <i class="fa-solid fa-bars-progress"></i>0%<br> progress
+            </div>
+        </div>
+        <div class="form-control">
+            <input type="value" required="" class="task-input">
+            <label>
+                <span style="transition-delay:0ms">A</span><span style="transition-delay:50ms">d</span><span
+                    style="transition-delay:100ms">d</span><span style="transition-delay:150ms"> </span><span
+                    style="transition-delay:200ms">a</span><span style="transition-delay:250ms"></span><span
+                    style="transition-delay:300ms">T</span><span style="transition-delay:350ms">a</span><span
+                    style="transition-delay:400ms">s</span><span style="transition-delay:450ms">k</span>
+            </label>
+            <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div id="task-container">
+
+        </div>
+    </div>
+    </div>
+    
+    <!--info about teacher-->
+
+    <script src="my teacher.js"></script>
+</body>
+
+</html>
