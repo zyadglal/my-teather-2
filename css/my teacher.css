@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .dashboard {
@@ -1198,4 +1198,5 @@ input[type="checkbox"] {
         margin: 20px 0 40px;
         width: 100%;
     }
+
 }
